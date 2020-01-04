@@ -57,11 +57,19 @@
     border: none;
     border-radius: 0;
     box-shadow: 0 0 32px rgba(0, 0, 0, 0.5);
-    background: inherit;
+    background-color: rgba(255, 255, 255, 0.5);
     
+  }
+
+
+  .jumbotron a:hover {
+    color: #fff !important;
+    text-decoration: none;
+    transition-duration: 500ms;
   }
   
   .navbar {
+    top: 15px;
     margin-bottom: 0;
     background-color: transparent;
     z-index: 9999;
@@ -70,17 +78,22 @@
     line-height: 1.42857143 !important;
     letter-spacing: 4px;
     border-radius: 0;
-    font-family: Montserrat, sans-serif;
+    font-family: Arial, sans-serif;
+    width: 100%;
   }
   .navbar li a, .navbar .navbar-brand {
     color: black !important;
   }
   .navbar-nav li a:hover {
+    transition-duration: 500ms;
     color: #fff !important;
   }
   .navbar-default .navbar-toggle {
     border-color: transparent;
     color: #fff !important;
+  }
+  .navbar .navbar-brand {
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
   }
   
   
@@ -94,6 +107,14 @@
     bottom: 6%;
   }
 
+  .sign-in {
+      display: inline-block;
+      border: 1px solid #000;
+  }
+  .sign-in:hover {
+      transition-duration: 500ms;
+      border: 1px solid #fff;
+  }
   
   </style>
 </head>
@@ -115,7 +136,7 @@
         <li><a href="#people">PEOPLE</a></li>
         <li><a href="#teach">TEACH</a></li>
         <li><a href="#about">ABOUT</a></li>
-        <li><a href="#sign-in">SIGN IN</a></li>
+        <li class="sign-in"><a href="#sign-in">SIGN IN</a></li>
       </ul>
     </div>
   </div>
@@ -125,7 +146,7 @@
     <div class="col-sm-6"> 
         NEW/ENROLL NOW 2020        
         <h1>Master landscape photography course</h1> 
-        FIND OUT MORE
+        <a href="#"><b>FIND OUT MORE</b></a><br>
 
         <br>
         <div class="col-sm-4"></div>
@@ -151,7 +172,7 @@
                 </div> <br>
                 <b>12/20 LEFT</b><br>
                 ENROLL ENDS - 02/02/2020<br>
-                <b>FIND OUT MORE</b><br>
+                <a href="#"><b>FIND OUT MORE</b></a><br>
             </div>
             <div class="blur"></div>
             </div>
@@ -164,7 +185,7 @@
                 </div> <br>
                 <b>20/20 FULL</b><br>
                 ENROLL ENDS - 01/01/2020<br>
-                <b>SIGN UP FOR UPDATES</b><br>
+                <a href="#"><b>SIGN UP FOR UPDATES</b></a><br>
             </div>
             </div>
             
